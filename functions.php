@@ -2,6 +2,24 @@
 /**
 * Ładowanie CSS i JS
 */
+if (!function_exists('bootstrapBasicEnqueueScripts')) {
+	function bootstrapBasicEnqueueScripts() 
+	{
+		wp_enqueue_style('bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css');
+		wp_enqueue_style('bootstrap-theme-style', get_template_directory_uri() . '/css/bootstrap-theme.min.css');
+		wp_enqueue_style('fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css');
+		wp_enqueue_style('main-style', get_template_directory_uri() . '/css/main.css');
+
+		wp_enqueue_script('jquery');
+		wp_enqueue_script('bootstrap-script', get_template_directory_uri() . '/js/vendor/bootstrap.min.js');
+		wp_enqueue_script('main-script', get_template_directory_uri() . '/js/main.js');
+		wp_enqueue_style('bootstrap-basic-style', get_stylesheet_uri());
+	}// bootstrapBasicEnqueueScripts
+}
+add_action('wp_enqueue_scripts', 'bootstrapBasicEnqueueScripts');
+
+
+/*
 function load_styles_and_scripts() {
   
   // loading CSS
@@ -33,6 +51,7 @@ function load_styles_and_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'load_styles_and_scripts');
+*/
 
 /**
 * Uruchamianie górnego i dolnego menu na stronie
