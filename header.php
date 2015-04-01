@@ -12,28 +12,28 @@
 
 	<?php wp_head();?>
 </head>
-
-<body>
+<body <?php body_class(); ?>>
+	<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Project name</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<?php 
+				  wp_nav_menu( array(
+					'menu'            => 'main-nav',
+					'menu_class'      => 'nav navbar-nav navbar-right',
+				  ));
+				?>
+			</div><!--/.nav-collapse -->
+      </div>
+    </nav>
 	
-    <!--Header-->
-    <header class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a id="logo" class="pull-left" href="/index.php"></a>
-                <div class="nav-collapse collapse pull-right">
-					<?php 
-                      wp_nav_menu( array(
-                        'menu'            => 'main-nav',
-                        'menu_class'      => 'nav navbar-nav navbar-right',
-                      ));
-                    ?>
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
-    </header>
-    <!-- /header -->
+	<div class="container page-container">

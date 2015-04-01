@@ -76,4 +76,19 @@ function special_nav_class($classes, $item){
      return $classes;
 }
 
+/**
+* Przesunięcie nawigacji poniżej menu wordpressa
+**/
+add_action('wp_head', 'mbe_wp_head');
+
+function mbe_wp_head(){
+    echo '<style>'.PHP_EOL;
+    echo 'body{ padding-top: 70px !important; }'.PHP_EOL;
+    // Using custom CSS class name.
+    echo 'body.body-logged-in .navbar-fixed-top{ top: 28px !important; }'.PHP_EOL;
+    // Using WordPress default CSS class name.
+    echo 'body.logged-in .navbar-fixed-top{ top: 28px !important; }'.PHP_EOL;
+    echo '</style>'.PHP_EOL;
+}
+
 ?>
