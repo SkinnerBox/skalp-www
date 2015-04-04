@@ -23,17 +23,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a id="logo" class="navbar-brand" href="index.php"></a>
+				<a id="logo" class="navbar-brand" href="/index.php"></a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<?php 
 				  wp_nav_menu( array(
 					'menu'            => 'main-nav',
 					'menu_class'      => 'nav navbar-nav navbar-right',
+					'walker' => new BootstrapBasicMyWalkerNavMenu()
 				  ));
 				?>
 			</div><!--/.nav-collapse -->
       </div>
     </nav>
-	
-	<div class="container page-container">

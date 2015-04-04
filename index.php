@@ -12,7 +12,7 @@
 <!--Treść listy wpisów z bloga-->
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
 
       <!--Generowanie listy wpisów z bloga-->
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -39,7 +39,7 @@
       <?php else: ?>
       <!-- no posts found -->
       <?php endif; ?>
-
+		<div class="big-gap"></div>
     </div>
   </div>
 </div>
