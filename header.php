@@ -23,7 +23,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a id="logo" class="navbar-brand" href="/index.php"></a>
+				<a id="logo" class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<?php 

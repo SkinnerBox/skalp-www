@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <!--Pobranie treœci strony-->
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <!--Wyœwietlenie tytu³u strony-->

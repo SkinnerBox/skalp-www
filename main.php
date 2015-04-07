@@ -22,7 +22,7 @@
 		</div>
 	</div>
 	
-	<div class="gap"></div>
+	<div class="big-gap"></div>
 	
 	<div id="partners">
 		<hr/>
@@ -38,8 +38,6 @@
 		</ul>
 		<hr/>
 	</div>
-	
-  
 </div>
 
 <!--Bottom-->
@@ -82,8 +80,8 @@
 			<div class="col-md-4 col-md-offset-2">
 				<h4>Stan ukończenia nowej strony:</h4>
 				<div class="progress">
-					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-						40%
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						60%
 					</div>
 				</div>
 			</div>

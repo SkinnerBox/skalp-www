@@ -1,11 +1,4 @@
-﻿<?php 
-
-/**
- * Required WordPress variable.
- */
-if (!isset($content_width)) {
-	$content_width = 1170;
-}
+<?php
 
 /**
 * Ładowanie CSS i JS
@@ -66,6 +59,15 @@ function mbe_wp_head(){
  */
 require get_template_directory() . '/inc/BootstrapBasicMyWalkerNavMenu.php';
 
-
+/**
+* Przesunięcie nawigacji poniżej menu wordpressa
+**/
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="widgettitle">',
+		'after_title' => '</h2>',
+));
 
 ?>
