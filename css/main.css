@@ -584,3 +584,35 @@ ul.robots li .preview:hover .links {
 	-o-transform: translate(0,0);
 	transform: translate(0,0)
 }
+
+/**
+*	Styl paska z wyborem stron wpisów na blogu
+**/
+div.pagination {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", LucidaGrande, "Lucida Sans", Geneva, Verdana, sans-serif;
+	padding:2px;
+	margin:7px;
+}
+
+div.pagination a {
+	margin: 2px;
+	padding: 0.5em 0.64em 0.43em 0.64em;
+	background-color: #01AA92;
+	text-decoration: none; /* no underline */
+	color: #fff;
+}
+div.pagination a:hover, div.pagination a:active {
+	padding: 0.5em 0.64em 0.43em 0.64em;
+	margin: 2px;
+	background-color: #45CFBC;
+	color: #fff;
+}
+div.pagination span.current {
+		padding: 0.5em 0.64em 0.43em 0.64em;
+		margin: 2px;
+		background-color: #A0F0E5;
+		color: #6d643c;
+	}
+div.pagination span.disabled {
+		display:none;
+	}
