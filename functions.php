@@ -70,4 +70,14 @@ if ( function_exists('register_sidebar') )
 		'after_title' => '</h2>',
 ));
 
+/* redirect users to front page after login */
+add_action('login_form', 'redirect_to_front_page');
+function redirect_to_front_page() {
+global $redirect_to;
+  if (!isset($_GET['redirect_to'])) {
+    $redirect_to = get_option('siteurl').'/551';
+  }
+}
+
+
 ?>
